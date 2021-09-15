@@ -12,7 +12,7 @@
 	    		<h1 class="title">Bookish</h1>
           <p>Books for Ninjas</p>
           <form id="search-books">
-            <input type="text" placeholder="Search books..." />
+            <input type="text" onfocus="this.value=''" placeholder="Search books..." />
           </form>
 	    	</div>
 	    </header>
@@ -37,8 +37,13 @@
 	    		</li>
 	    	</ul>
 	    </div>
+		<div class="hide-box">
+		<input type="checkbox" id="hide">
+			<label for="hide">Hide all books</label>
+		</div>
 	    <form id="add-book">
-	    	<input type="text" placeholder="Add a book..." />
+			
+	    	<input type="text" onfocus="this.value=''" placeholder="Add a book..." />
 	    	<button>Add</button>
 	    </form>
 
